@@ -1,0 +1,151 @@
+{% extends './layouts/default.html' %} {% block title %}{{ title }}{% endblock %} {% block content %}
+
+<div class="wrapper-outer">
+  <div class="banner">
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/logo.png" style="width:100%" />
+      </div>
+      <div class="nav">
+        <nav class="nav-collapse">
+          <ul>
+            <li><a href="#">What is Charibox</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Our mission</a></li>
+          </ul>
+        </nav>
+        <script>
+          var navigation = responsiveNav(".nav-collapse", {
+            animate: true, // Boolean: Use CSS3 transitions, true or false
+            transition: 284, // Integer: Speed of the transition, in milliseconds
+            label: "Menu", // String: Label for the navigation toggle
+            insert: "after", // String: Insert the toggle before or after the navigation
+            customToggle: "", // Selector: Specify the ID of a custom toggle
+            closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+            openPos: "relative", // String: Position of the opened nav, relative or static
+            navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+            navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+            jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+            init: function() {}, // Function: Init callback
+            open: function() {}, // Function: Open callback
+            close: function() {} // Function: Close callback
+          });
+        </script>
+      </div>
+    </div>
+    <!--<div class="bolder">
+            <div class="wrapper-holder">
+                  <div class="wrapper-inner">
+                    <h1>Every<br /> home<br /> needs<br /> a box for<br /> Charity</h1>
+                  </div>
+              </div>
+          </div>-->
+  </div>
+  <div class="contact-charity clearfix">
+    <div class="wrapper-holder">
+      <div class="wrapper-inner">
+        <div class="line-about">
+          <h1>What is
+            <br /> Charitybox?</h1>
+          <p>A platform for donating to your favorite charities via a box.
+            <br />
+            <br /> All users that sign up will be mailed a box to keep at their home, where they can drop in items for donation.
+            <br />
+            <br /> Charibox will schedule pickups for the boxes.</p>
+        </div>
+        <div class="contact-form">
+          <h1>Sign up</h1>
+          <div class="form-actual">
+            <form method="post">
+              <input type="text" placeholder="Your name" />
+              <input type="text" placeholder="Your email" />
+              <!-- <select>
+                <option selected>Charities list</option>
+                <option>item 1</option>
+                <option>item 2</option>
+              </select> -->
+              <input type="image" src="images/sign-up-btn.jpg" />
+              <!-- <a style="float:right; margin-top:5px;" href="#">
+                <img src="images/fb.png" />
+              </a> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-holder">
+    <div class="how_work">
+      <h1>How it works?</h1>
+      <ul>
+        <li>
+          <p>Sign up and pick the
+            <br>charity to support</p>
+        </li>
+        <li>
+          <p>We will mail you a
+            <br>box</p>
+        </li>
+        <li>
+          <p>You drop any item
+            <br>you want to donate
+            <br>in the box
+            <br>
+            <span class="min">(Only non-perishable items)</span>
+          </p>
+        </li>
+        <li>
+          <p>We schedule a
+            <br>pickup at the end of
+            <br>the month</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mission">
+    <div class="wrapper-holder">
+      <ul>
+        <li>
+          <div class="mission-left">
+            <h1>Our Mission</h1>
+            <p>Our mission is to make it easy to donate to your favorite charity straight from your home.</p>
+            <div class="mission-sign-up">
+              <h1>Sign up now</h1>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="missiom-right">
+            <div class="twiter">
+              <img src="images/twitter.png">
+            </div>
+            <p>Donec sed imperdiet dolor. Pellentesque finibu s turpis sed arcu fringilla, eget finibus arcu eleifend. Donec quis scelerisque leo, ut feugiat orci.</p>
+            <div class="lis-mission">
+              <img src="images/load.png" />
+              <img src="images/return.png" />
+              <img src="images/rate.png" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper-holder">
+    <div class="footer-area">
+      <div class="left-footer">
+        <a href="#">
+          <img src="images/twitter-dark.png" />
+        </a>
+        <a href="#">
+          <img src="images/fb-dark.png" />
+        </a>
+      </div>
+      <div class="right-footer">
+        <p>© 2015, Charibox. All rights reserved.
+          <br> Terms and Conditions</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
