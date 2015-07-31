@@ -9,9 +9,9 @@
       <div class="nav">
         <nav class="nav-collapse">
           <ul>
-            <li><a href="#">What is Charibox</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our mission</a></li>
+            <li><a href="#what">What is Charibox</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#mission">Our mission</a></li>
           </ul>
         </nav>
         <script>
@@ -45,26 +45,25 @@
     <div class="wrapper-holder">
       <div class="wrapper-inner">
         <div class="line-about">
-          <h1>What is
-            <br /> Charitybox?</h1>
-          <p>A platform for donating to your favorite charities via a box.
-            <br />
-            <br /> All users that sign up will be mailed a box to keep at their home, where they can drop in items for donation.
-            <br />
-            <br /> Charibox will schedule pickups for the boxes.</p>
+          <h1 name="what">What is
+            <br /> Charibox?</h1>
+          <p>A platform for donating to your favorite charities via a box.</p>
+          <p>Our members receive a box to keep at their home, where they can drop in items for donation.</p>
+          <p>Charibox will schedule pickups for the box.</p>
         </div>
         <div class="contact-form">
-          <h1>Sign up</h1>
+          <h1 name="signup">Early access</h1>
           <div class="form-actual">
             <form method="post">
-              <input type="text" placeholder="Your name" />
-              <input type="text" placeholder="Your email" />
+              <input type="text" placeholder="Your name" class="name" />
+              <input type="text" placeholder="Your email" class="email" />
               <!-- <select>
                 <option selected>Charities list</option>
                 <option>item 1</option>
                 <option>item 2</option>
               </select> -->
-              <input type="image" src="images/sign-up-btn.jpg" />
+              <button type="submit" class="cta"></button>
+              <span class="processing">processing...</span>
               <!-- <a style="float:right; margin-top:5px;" href="#">
                 <img src="images/fb.png" />
               </a> -->
@@ -76,7 +75,7 @@
   </div>
   <div class="wrapper-holder">
     <div class="how_work">
-      <h1>How it works?</h1>
+      <h1 name="how">How it works?</h1>
       <ul>
         <li>
           <p>Sign up and pick the
@@ -107,10 +106,10 @@
       <ul>
         <li>
           <div class="mission-left">
-            <h1>Our Mission</h1>
+            <h1 name="mission">Our Mission</h1>
             <p>Our mission is to make it easy to donate to your favorite charity straight from your home.</p>
             <div class="mission-sign-up">
-              <h1>Sign up now</h1>
+              <h1><a href="#signup" style="color: black;">Sign up now</a></h1>
             </div>
           </div>
         </li>
@@ -134,15 +133,14 @@
     <div class="footer-area">
       <div class="left-footer">
         <a href="#">
-          <img src="images/twitter-dark.png" />
+          <!-- <img src="images/twitter-dark.png" /> -->
         </a>
         <a href="#">
-          <img src="images/fb-dark.png" />
+          <!-- <img src="images/fb-dark.png" /> -->
         </a>
       </div>
       <div class="right-footer">
-        <p>© 2015, Charibox. All rights reserved.
-          <br> Terms and Conditions</p>
+        <p>© 2015, Charibox. All rights reserved.</p>
       </div>
     </div>
   </div>

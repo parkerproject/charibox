@@ -1,8 +1,7 @@
 // assets to be used by the 'hapi-assets' module based on process.env.NODE_ENV
 module.exports = {
   development: {
-    js: ['js/responsive-nav.js'
-    ],
+    js: ['js/responsive-nav.js', 'js/jquery.min.js', 'js/script.js'],
 
     css: ['css/responsive-nav.css',
       'css/styles.css'

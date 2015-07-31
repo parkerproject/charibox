@@ -1,21 +1,9 @@
 require('dotenv').load();
-var swig = require('swig');
 var collections = ['users'];
-var db = require("mongojs").connect(process.env.CHARIBOX_MONGODB_URL, collections);
+var db = require("mongojs").connect(process.env.CHARIBOX_MONGODB_URL,
+  collections);
 var randtoken = require('rand-token');
 var user_id = randtoken.generate(7);
-var sendEmail = require('./sendEmail');
-
-
-function identify(data) {
-  analytics.identify({
-    userId: data.userId,
-    traits: {
-      email: data.email,
-      name: data.name
-    }
-  });
-}
 
 
 
@@ -41,24 +29,14 @@ module.exports = {
             status: 'failed'
           });
         } else {
-          identify(data);
 
-          var message = (doc.updatedExisting) ? 'You have already registered! We just sent you an activation email.' : 'Please check your inbox to verify your email.';
+          var message = (doc.updatedExisting) ?
+            'You have already registered!' :
+            'Thank you for signing up. Expect an email from us soon.';
 
-          swig.renderFile(__base + 'server/views/confirmEmail.html', {
-              name: data.name,
-              url: 'http://imagify.co/activate?user=' + data.userId + '&email=' + data.email + '&name=' + data.name
-            },
-            function (err, content) {
-              if (err) {
-                throw err;
-              }
-              var subject = 'imagify - Please activate your account';
-              sendEmail(data.email, subject, content);
-              reply({
-                status: message
-              });
-            });
+          reply({
+            status: message
+          });
 
         }
 

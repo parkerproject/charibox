@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6{ font-family: 'gotham_probold'; text-transform:uppercase;
 
 .nav-collapse a {
   color:#fff;
-  font-size:13px;
+  font-size:14px;
   text-decoration: none;
   width: 100%;
   text-align:center;
@@ -243,6 +243,8 @@ div.bolder h1{
 	padding:4px 2.7%;
 	margin-bottom:15px;
 	border:1px #e7e7e7 solid;
+  font-size: 14px;
+  color: black;
 	}
 .form-actual select{
 	width:100%;
@@ -334,6 +336,7 @@ div.bolder h1{
 	color:#fff;
 	text-align:justify;
 	padding-bottom:20px;
+  line-height: 25px;
 }
 .mission-sign-up{
 	float:left;
@@ -350,6 +353,7 @@ div.bolder h1{
 	width:90%;
 	background:#68a5a8;
 	padding:30px 5%;
+  display: none;
 }
 .twiter{
 	padding:20px 0px;
@@ -386,4 +390,37 @@ div.bolder h1{
 .right-footer p{
 	text-align:right;
 	color:#31282b;
+}
+
+.error{
+  border: 2px solid red!important;
+}
+
+.cta{
+  background: url(../images/sign-up-btn.jpg);
+  width: 100px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.message_result{
+background-color: white;
+padding: 20px;
+line-height: 25px;
+color: green;
+}
+
+.processing{
+  position: relative;
+top: -10px;
+color: red;
+font-weight: bold;
+font-size: 13px;
+font-style: italic;
+display: none;
+}
+
+p{
+  line-height: 25px;
+  font-family: sans-serif;
 }
