@@ -318,7 +318,8 @@ div.bolder h1{
 .mission li{
 	display:inline-block;
 	vertical-align:top;
-	width:380px;
+	/*width:380px;*/
+  width:100%;
 	margin:10px 20px;
 }
 .mission li:nth-child(2){
@@ -331,18 +332,24 @@ div.bolder h1{
 	color:#fff;
 	text-align:left;
 	padding:10px 0px;
+  text-align: center;
 }
 .mission-left p{
 	color:#fff;
 	text-align:justify;
 	padding-bottom:20px;
   line-height: 25px;
+  text-align: center;
+  font-size: 1.5em;
 }
 .mission-sign-up{
-	float:left;
-	background:#4ce8fe;
-	padding:5px 15px;
-	cursor:pointer;
+  background: #4ce8fe;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
 }
 .mission-sign-up h1{
 	text-align:center;
